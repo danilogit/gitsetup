@@ -4,8 +4,8 @@
 sudo apt-get install git
 
 # Configure terminal
-echo "parse_git_branch() { git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'}" >> bashrc.txt
-echo 'PS1="\n\e[33;1m\u@\h: \e[1;34m\W\e[0m\[\033[33m\]\$(parse_git_branch)\[\033[00m\] (\w)\n\$ "' >> bashrc.txt
+echo "parse_git_branch() { git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'}" >> ~/.bashrc
+echo 'PS1="\n\e[33;1m\u@\h: \e[1;34m\W\e[0m\[\033[33m\]\$(parse_git_branch)\[\033[00m\] (\w)\n\$ "' >> ~/.bashrc
 
 # Install DiffMerge
 wget http://download-us.sourcegear.com/DiffMerge/4.2.0/diffmerge_4.2.0.697.stable_amd64.deb
